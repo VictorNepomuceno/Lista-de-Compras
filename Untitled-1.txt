@@ -1,0 +1,16 @@
+Quero fazer esse seguinte projeto utilizando HTML, CSS, JAVASCRIPT E PYTHON PARA O CRUD, ME DE O PASSO A PASSO PARA REALIZAR.
+
+Lista de compras
+
+Página inicial
+Botao de cadastro de produtos
+Produtos no centro
+Botao de deletar produto ao lado de produto
+
+Cadastro de produtos:
+
+    Input nome de produto
+    Botao de adicionar produto
+    Mensagem com dois botoes (alert) :
+         Adicionar outro prodtuo (fica na pagina)
+         Ir para lista (redireciona para lista com produtos atualizados)

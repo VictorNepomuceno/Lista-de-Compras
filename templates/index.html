@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+        <title>Lista de compras</title>
+    </head>
+    <body>
+        <h1>Lista de Compras</h1>
+        <div id="produtos">
+            {% for produto in produtos %}
+            <div class="produto">
+                <div class="py">{{ produto }}</div>
+                <a href="{{url_for('deletar')}}">Deletar</a>
+            </div>
+            {% endfor %} {% for item in lista %}
+            <div class="produtoLista">
+                <div class="py">{{ item }}</div>
+                <a href="{{url_for('deletar')}}">Deletar</a>
+            </div>
+            {% endfor %}
+        </div>
+        <div>
+            <button class="btnList">Gerar Lista de Compras</button>
+            <a class="add" href="{{url_for('cadastrar')}}">Adicionar Produto</a>
+        </div>
+
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>
